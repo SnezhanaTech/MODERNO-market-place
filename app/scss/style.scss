@@ -68,6 +68,16 @@
   background-size: cover;
   background-position: center;
   min-height: 533px;
+
+  &.page-search {
+    min-height: 230px;
+    .search__inner {
+      padding: 60px 0px 70px;
+      &-text {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 .search__inner {
@@ -569,24 +579,24 @@
   a {
     width: 28px;
     height: 28px;
-    background-image: url();
+    background-image: url(../images/icons/css_sprites.png);
   }
 }
 
-.link-tweeter {
-  background-position: -28px 0;
+.link-twitter {
+    background-position: -28px -28px;
 }
 
-.link-youtube {
-  background-position: 0 -28px;
+.link-youtube {  
+  background-position: -56px 0;
 }
 
 .link-pinterest {
-  background-position: -28px -28px;
+  background-position: 0 -28px;
 }
 
 .link-linkidn {
-  background-position: -56px 0;
+  background-position: -28px 0; 
 }
 
 .footer__form-title {
@@ -608,7 +618,8 @@
     font-size: 14px;
     padding-left: 13px;
     padding-right: 50px;
-
+    outline: transparent;
+    
     &::placeholder {
       color: #697378;
     }
